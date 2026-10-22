@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand colour fallback: keeps brand-* classes working even if tailwind.config.js has no `brand` palette */
+@layer utilities {
+  .bg-brand-50{background-color:#eef2ff}
+  .text-brand-50{color:#eef2ff}
+  .border-brand-50{border-color:#eef2ff}
+  .ring-brand-50{--tw-ring-color:#eef2ff}
+  .accent-brand-50{accent-color:#eef2ff}
+  .from-brand-50{--tw-gradient-from:#eef2ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(238 242 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-100{background-color:#e0e7ff}
+  .text-brand-100{color:#e0e7ff}
+  .border-brand-100{border-color:#e0e7ff}
+  .ring-brand-100{--tw-ring-color:#e0e7ff}
+  .accent-brand-100{accent-color:#e0e7ff}
+  .from-brand-100{--tw-gradient-from:#e0e7ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(224 231 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-200{background-color:#c7d2fe}
+  .text-brand-200{color:#c7d2fe}
+  .border-brand-200{border-color:#c7d2fe}
+  .ring-brand-200{--tw-ring-color:#c7d2fe}
+  .accent-brand-200{accent-color:#c7d2fe}
+  .from-brand-200{--tw-gradient-from:#c7d2fe var(--tw-gradient-from-position);--tw-gradient-to:rgb(199 210 254 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-300{background-color:#a5b4fc}
+  .text-brand-300{color:#a5b4fc}
+  .border-brand-300{border-color:#a5b4fc}
+  .ring-brand-300{--tw-ring-color:#a5b4fc}
+  .accent-brand-300{accent-color:#a5b4fc}
+  .from-brand-300{--tw-gradient-from:#a5b4fc var(--tw-gradient-from-position);--tw-gradient-to:rgb(165 180 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-400{background-color:#818cf8}
+  .text-brand-400{color:#818cf8}
+  .border-brand-400{border-color:#818cf8}
+  .ring-brand-400{--tw-ring-color:#818cf8}
+  .accent-brand-400{accent-color:#818cf8}
+  .from-brand-400{--tw-gradient-from:#818cf8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(129 140 248 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-500{background-color:#6366f1}
+  .text-brand-500{color:#6366f1}
+  .border-brand-500{border-color:#6366f1}
+  .ring-brand-500{--tw-ring-color:#6366f1}
+  .accent-brand-500{accent-color:#6366f1}
+  .from-brand-500{--tw-gradient-from:#6366f1 var(--tw-gradient-from-position);--tw-gradient-to:rgb(99 102 241 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-600{background-color:#4f6df5}
+  .text-brand-600{color:#4f6df5}
+  .border-brand-600{border-color:#4f6df5}
+  .ring-brand-600{--tw-ring-color:#4f6df5}
+  .accent-brand-600{accent-color:#4f6df5}
+  .from-brand-600{--tw-gradient-from:#4f6df5 var(--tw-gradient-from-position);--tw-gradient-to:rgb(79 109 245 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-650{background-color:#3f5cf0}
+  .text-brand-650{color:#3f5cf0}
+  .border-brand-650{border-color:#3f5cf0}
+  .ring-brand-650{--tw-ring-color:#3f5cf0}
+  .accent-brand-650{accent-color:#3f5cf0}
+  .from-brand-650{--tw-gradient-from:#3f5cf0 var(--tw-gradient-from-position);--tw-gradient-to:rgb(63 92 240 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-700{background-color:#3b4fe0}
+  .text-brand-700{color:#3b4fe0}
+  .border-brand-700{border-color:#3b4fe0}
+  .ring-brand-700{--tw-ring-color:#3b4fe0}
+  .accent-brand-700{accent-color:#3b4fe0}
+  .from-brand-700{--tw-gradient-from:#3b4fe0 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 79 224 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+  .bg-brand-500\/10{background-color:rgb(99 102 241 / 0.1)}
+  .bg-brand-500\/15{background-color:rgb(99 102 241 / 0.15)}
+  .bg-brand-500\/20{background-color:rgb(99 102 241 / 0.2)}
+  .ring-brand-500\/20{--tw-ring-color:rgb(99 102 241 / 0.2)}
+  .ring-brand-400\/20{--tw-ring-color:rgb(129 140 248 / 0.2)}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+html.dark body {
+  background-color: #020617;
+}
